@@ -5,8 +5,8 @@ shinyServer(function(input, output) {
 
   df = reactive({
 
-    # Compose data frame
     donations = donations[donations$date > input$date[1] & donations$date < input$date[2],]
+    # Compose data frame
     data.frame(
       Name = c("Bread",
                "Cheese"),
